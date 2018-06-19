@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33d69433-21f5-4645-8020-96650e621688" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ds_DoublyLinkedList/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ds_DoublyLinkedList/DoublyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,14 +15,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Node.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ds_DoublyLinkedList/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+            <state relative-caret-position="220">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#154#155#0" expanded="true" />
                 <element signature="e#175#176#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DoublyLinkedList.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ds_DoublyLinkedList/DoublyLinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="633">
+              <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
+              <folding>
+                <element signature="e#230#231#0" expanded="true" />
+                <element signature="e#254#255#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,6 +80,7 @@
         <option value="$PROJECT_DIR$/src/ds_StackUsingCircularLinkedList/Stack.java" />
         <option value="$PROJECT_DIR$/src/ds_StackUsingCircularLinkedList/StackListApp.java" />
         <option value="$PROJECT_DIR$/src/ds_DoublyLinkedList/Node.java" />
+        <option value="$PROJECT_DIR$/src/ds_DoublyLinkedList/DoublyLinkedList.java" />
       </list>
     </option>
   </component>
@@ -92,6 +107,12 @@
               <item name="DataStructres" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructuresAlgoJava" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStructres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStructuresAlgoJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ds_CircularLinkedList" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataStructres" type="b2602c69:ProjectViewProjectNode" />
@@ -248,6 +269,14 @@
       <option name="presentableId" value="Default" />
       <updated>1527616720968</updated>
     </task>
+    <task id="LOCAL-00001" summary="added doubly liked list package">
+      <created>1529425089769</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1529425089769</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -261,12 +290,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005952" side_tool="true" weight="0.33224756" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32994455" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49940476" weight="0.33224756" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32994455" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20692798" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21116279" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -284,6 +313,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added doubly liked list package" />
+    <option name="LAST_COMMIT_MESSAGE" value="added doubly liked list package" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -548,13 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ds_CircularLinkedList/CircularLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="61" column="91" selection-start-line="61" selection-start-column="91" selection-end-line="61" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ds_StackUsingCircularLinkedList/StackListApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -562,13 +588,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ds_CircularLinkedList/CircularLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="66" selection-start-line="66" selection-end-line="74" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ds_DoublyLinkedList/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        <state relative-caret-position="220">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#154#155#0" expanded="true" />
             <element signature="e#175#176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ds_DoublyLinkedList/DoublyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
+          <folding>
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
           </folding>
         </state>
       </provider>
