@@ -10,7 +10,7 @@ public class DoublyLinkedList<T> {
         last = null;
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty(){ //
         return (first == null);
     }
 
@@ -75,6 +75,6 @@ public class DoublyLinkedList<T> {
         }
         last.next = null;
         return temp;
-        
+
     }
 }
