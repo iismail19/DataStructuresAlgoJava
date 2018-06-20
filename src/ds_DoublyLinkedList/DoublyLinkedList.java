@@ -75,6 +75,58 @@ public class DoublyLinkedList<T> {
         }
         last.next = null;
         return temp;
+    }
 
+    // assume non-empty list
+    public boolean insertAfter(T key, T data){ // the key is insert after this data, the Dada is the data to be inserted
+        Node current = first; // we start from the beginning of the list
+        while(current.data != key){ // as long as we have not found the key in a particular node
+            current = current.next; // advance current
+            if(current == null){ // not able to find the key you are searching for
+                return false;
+            }
+        }
+
+        Node<T> newNode = new Node<>();
+        newNode.data = data;
+        if(current == last){ // if the current node is the last node
+            current.next = null;
+            last = newNode;
+        } else { // if this node is any other node
+            newNode.next = current.next; // new node's first field should point to the node of the current's node next field
+            current.next.previous = newNode; // the node ahead of the current node's previous points back to the node inserted after the current node
+        }
+
+        newNode.previous = current;
+        current.next = newNode;
+        return true;
+    }
+
+    //assume non-empty list
+    public Node deleteKey(T key){
+        Node current = first;
+
+        while (current.data != key){
+            current = current.next;
+            if(current == null){
+                return null; // no key found
+            }
+        }
+
+        Node<T> temp = new Node();
+        if(current == first){
+            temp = first;
+            first = current.next;
+            current.next.previous = null;
+        } else if (current == last){ // if it is the last node
+            temp = last;
+            current.previous.next = null;
+            last = current.previous;
+        } else{
+            temp = current;
+            current.previous.next = current.next;
+            current.next.previous = current.previous;
+        }
+        return temp;
     }
 }
