@@ -1,4 +1,4 @@
-package algo.algo.Recursion;
+package algo.Recursion;
 
 
 public class RecursionApp {
@@ -20,6 +20,8 @@ public class RecursionApp {
         System.out.println("Fibonacci Sequence...");
         int nthElement = 8;
         System.out.println("Looking for n: " + nthElement +" = " + fibonacciSequence(nthElement));
+
+        System.out.println("Binray Search: "+ key + ", found = " + recursionBinarySearch(a,0, a.length-1, key));
 
     }
     public static int facotrial(int n){
@@ -66,6 +68,21 @@ public class RecursionApp {
             return 1;
         else
             return (fibonacciSequence((n-1)) + fibonacciSequence(n-2));
+    }
+
+    public static int recursionBinarySearch(int[] array, int lowerbound, int upperbound, int searchkey){
+        if(lowerbound > upperbound){
+            return -1;
+        }
+        else{
+            int midpoint = (lowerbound + upperbound) /2;
+            if(array[midpoint] == searchkey)
+                return midpoint;
+            else if (array[midpoint] > searchkey)
+                return recursionBinarySearch(array, lowerbound, midpoint -1, searchkey);
+            else
+                return recursionBinarySearch(array, midpoint+1, upperbound, searchkey);
+        }
     }
 
 }
