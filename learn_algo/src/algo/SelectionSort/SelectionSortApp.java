@@ -2,7 +2,7 @@ package algo.SelectionSort;
 
 public class SelectionSortApp {
     public static void main(String[] args){
-        int[] myArray = {9,8,3,13,87,12,99};
+        int[] myArray = {9,8,3,13,87,12,99,15};
         System.out.println("The array pre-sorting:");
         for (int i = 0; i < myArray.length; i++){
             System.out.print(" [" + myArray[i] + "] ");
