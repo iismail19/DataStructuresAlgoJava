@@ -1,6 +1,6 @@
-package algo.SelectionSort;
+package algo.InsertionSort;
 
-public class SelectionSortApp {
+public class InsertionApp {
     public static void main(String[] args){
         int[] myArray = {9,8,3,13,87,12,99,15};
         System.out.println("The array pre-sorting:");
@@ -9,29 +9,23 @@ public class SelectionSortApp {
         }
         System.out.println();
         System.out.println("The array after sorting:");
-        int[] sortedArray = selectionSort(myArray);
+        int[] sortedArray = insertionSort(myArray);
         for (int i = 0; i < sortedArray.length; i++){
             System.out.print(" [" + sortedArray[i] + "] ");
         }
-
     }
 
-    public static int [] selectionSort(int a[]){
-        for(int i =0; i < a.length -1; i++){
-            int min = i;
-            for(int j = i+1; j < a.length; j++){
-                if(a[j] < a[min]){
-                    min = j;
-                }
+    public static int [] insertionSort(int [] a){
+        for (int i =1; i <a.length -1; i++){
+            int j = i-1;
+            int element = a[i];
+            while (j >= 0 && a[j] > element){
+                a[j+1] = a[j];
+                j--;
             }
-            if(a[i] != a[min]) {
-                int temp = a[i];
-                a[i] = a[min];
-                a[min] = temp;
-            }
+            a[j+1] = element; // this can be in while loop??
         }
         return a;
     }
-
 
 }
